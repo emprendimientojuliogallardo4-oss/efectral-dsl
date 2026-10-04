@@ -1,23 +1,21 @@
 ﻿# Registro de Cambios (Changelog) - Efectral DSL
 
-Todas las actualizaciones notables de la Arquitectura Efectral DSL se documentarÃ¡n en este archivo.
-El formato sigue el estÃ¡ndar de registro histÃ³rico para facilitar la lectura de agentes y humanos.
+Todas las actualizaciones notables de la Arquitectura Efectral DSL se documentarán en este archivo.
+El formato sigue el estándar de registro histórico para facilitar la lectura de agentes y humanos.
 
 ---
 
-## [2.0.0] - El Hard Fork: Morfosintaxis Agéntica y Arquitectura Modular Efectral OS - (Versión Actual)
+## [2.0.0] - Evolución a Morfosintaxis Agéntica - (Versión Actual)
 
 ### 🚀 Cambio (Qué cambió y Cómo)
-- **Evolución a Morfosintaxis Agéntica:** El DSL dejó de ser solo una plantilla estructural para convertirse en un *Instruction Set Architecture (ISA)* estricto. Se adoptó la Ley del Sujeto Tácito: los OpCodes ahora son Verbos Transitivos Atómicos en imperativo activo (ej. !Invoca, !Extrae). Prohibido el uso de PascalCase/CamelCase en los verbos.
-- **Operadores Lógicos Nativos:** Integración oficial de conectores en español puro (y, o, entonces, si no) reemplazando los operadores simbólicos (&&, ||) para fluidificar el razonamiento neuronal.
-- **Redefinición del Parser (#META):** El símbolo # fue despojado de su uso como "comentario visual" y ahora es estrictamente reservado para los bloques que el motor host lee invisiblemente (#META ... #Fin).
-- **Arquitectura de Módulos y Tentáculos:** Abandono oficial de las Skills en Markdown monolítico (paradigma OpenClaw). El DSL ahora orquesta un ecosistema modular de 3 capas: efc_env.yaml (ADN/Dependencias), 	entacles/ (Código Puro), y CORE.efd (Cerebro Lógico).
-- **Linter Físico (efc_validator.py):** El analizador morfosintáctico fue actualizado para interceptar el OpCode !Invoca(Tentaculo:[X]) y verificar físicamente la existencia del script en el disco duro del módulo.
-- **Reset de Branding:** Erradicación oficial de las nomenclaturas "Efectral 4". El sistema es un único Sistema Operativo Agéntico Soberano: **Efectral**.
+- **Morfosintaxis Agéntica:** El DSL dejó de ser solo una plantilla estructural para convertirse en un lenguaje estricto y tipado. Se adoptó la Ley del Sujeto Tácito: los OpCodes ahora son Verbos Transitivos Atómicos en imperativo activo (ej. !Invoca, !Extrae). Prohibido el uso de PascalCase/CamelCase interno en los verbos.
+- **Operadores Lógicos Nativos:** Integración oficial de conectores lingüísticos (y, o, entonces, si no) reemplazando los operadores simbólicos heredados (&&, ||) para fluidificar el razonamiento neuronal.
+- **Redefinición del Parser (#META):** El símbolo # fue despojado de su uso como "comentario visual" y ahora es estrictamente reservado para los bloques de código máquina (#META ... #Fin).
+- **Validador Morfosintáctico (efc_validator.py):** El linter fue reescrito para interpretar de forma estricta los nuevos operadores lógicos y rechazar cualquier instrucción que viole la atomicidad de los verbos o contenga prosa.
 
 ### 🧠 Motivo (Por qué y Resultado)
-- **¿Por qué?** El paradigma anterior dependía de prosa en Markdown y cargaba miles de tokens de scripts Bash y Python en el contexto de la IA. Era el "Síndrome del Agente Obeso".
-- **Resultado:** Al separar el código físico en *Tentáculos* y dejar solo la lógica morfosintáctica en el archivo .efd, la ejecución se volvió matemáticamente determinista. Efectral ahora opera como el Kernel de un Sistema Operativo (Efectral OS).
+- **¿Por qué?** El paradigma anterior aún permitía descripciones conversacionales que diluían la atención del modelo.
+- **Resultado:** Efectral DSL ahora es puramente determinista. Obliga a la Inteligencia Artificial a operar como un procesador lógico absoluto, erradicando la alucinación por ambigüedad.
 
 ---
 
@@ -76,4 +74,5 @@ El formato sigue el estÃ¡ndar de registro histÃ³rico para facilitar la lectu
 - **Reinicio HistÃ³rico (Clean Slate):** EliminaciÃ³n total del historial de Git anterior para establecer una base pura y auditable.
 - **Purga de Vestigios:** ErradicaciÃ³n de las dependencias y terminologÃ­a heredada de las versiones no oficiales (Efectral 4).
 - **Estructura Base:** ConsolidaciÃ³n de los bloques fundamentales (`BloqueIdentidad`, `BloqueReglas`, `BloqueEjecucion`) y el glosario central.
+
 
