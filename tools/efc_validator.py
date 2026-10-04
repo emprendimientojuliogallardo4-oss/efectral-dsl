@@ -233,6 +233,21 @@ class EfectralValidator:
                             line
                         ))
 
+                    # Análisis de Módulos / Tentáculos
+                    invoca_match = re.search(r"!Invoca\(\s*Tentaculo\s*:\s*\[(.*?)\]\s*\)", stripped)
+                    if invoca_match:
+                        tentaculo_file = invoca_match.group(1).strip()
+                        # TODO: Asegurar la ruta base exacta si el contexto de ejecución varía
+                        # Por defecto busca en un subdirectorio 'tentacles/' relativo al directorio del archivo
+                        base_dir = os.path.dirname(os.path.abspath(self.filepath))
+                        tentacle_path = os.path.join(base_dir, "tentacles", tentaculo_file)
+                        if not os.path.exists(tentacle_path):
+                            self.errors.append(ValidationError(
+                                idx, 1, "MOD-01",
+                                f"Tentáculo no encontrado: El archivo '{tentaculo_file}' no existe en el directorio físico 'tentacles/'.",
+                                line
+                            ))
+
                 # Dentro de un bloque estructurado, solo se admiten elementos normativos
                 es_directiva = stripped.startswith("@")
                 es_accion = bool(re.match(r"^([0-9]+\)\s*)?!", stripped))
