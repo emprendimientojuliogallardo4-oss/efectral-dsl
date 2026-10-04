@@ -1,9 +1,0 @@
-BloqueMemoria:[
-    @Aplica(Estructura:[LIFO])
-    @Fija(EstadoInicial:[AgenteOperativoEnBlanco])
-    
-    # Aquí la IA registrará sus memorias a largo plazo de forma determinista
-    MemoriaPersistente:[
-        - Entrada:[Ninguna]
-    ]
-]

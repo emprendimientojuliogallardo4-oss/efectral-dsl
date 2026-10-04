@@ -1,9 +1,0 @@
-BloqueEstadoSesion:[
-    @Aplica(Estructura:[Volatil])
-    
-    # Aquí se registra el contexto inmediato de la sesión actual
-    EstadoActual:[
-        - TareaActiva:[EsperandoInstrucciones]
-        - UltimoComando:[Ninguno]
-    ]
-]

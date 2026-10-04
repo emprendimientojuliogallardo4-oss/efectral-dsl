@@ -1,9 +1,0 @@
-BloqueUsuario:[
-    @Aplica(Identidad:[OperadorEfectual])
-    
-    # Definición de las directivas y contexto del usuario interactuando con el agente
-    PreferenciasUsuario:[
-        - NivelDetalle:[Directo-Preciso]
-        - ConfirmacionRequerida:[Si]
-    ]
-]

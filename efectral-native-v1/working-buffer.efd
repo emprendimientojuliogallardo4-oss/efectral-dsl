@@ -1,6 +1,0 @@
-BloqueBufferTrabajo:[
-    @Aplica(Estructura:[Temporal])
-    
-    # Área de procesamiento temporal (Scratchpad)
-    Contenido:[Vacío]
-]
